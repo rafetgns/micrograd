@@ -1,5 +1,5 @@
 # micrograd
-![Computation Graph](fun/output_graph.png)
+![Computation Graph](./fun/output_graph.png)
 reimplementation and experimentation playground for the scalar valued autograd engine micrograd with computational graph visualizer
 
 ## structure
