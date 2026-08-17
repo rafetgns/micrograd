@@ -1,7 +1,7 @@
 from graphviz import Digraph
 
 def draw_compgraph(root, save=False):
-    dot = Digraph(format="svg", graph_attr={"rankdir":"LR"})
+    dot = Digraph(format="png", graph_attr={"rankdir":"LR"})
 
     def trace(root):
         nodes, edges = set(), set()
@@ -30,5 +30,5 @@ def draw_compgraph(root, save=False):
     for n1, n2 in edges:
         dot.edge(str(id(n1)), str(id(n2)) + n2._op)
     if save:
-        dot.render("output_graph", format="svg", cleanup=True)
+        dot.render("output_graph", format="png", cleanup=True)
     return dot
