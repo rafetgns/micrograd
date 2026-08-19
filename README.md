@@ -18,8 +18,8 @@ from micrograd.utils import draw_compgraph
 model = MLP(2, [16, 1])
 
 # forward pass
-x = [Value(2.0), Value(3.0)] # ;x.label="name"
-out = model(x)
+x = [Value(2.0), Value(3.0)] 
+out = model(x) #; out.label = "y_pred"
 
 # backprop
 out.backward()
